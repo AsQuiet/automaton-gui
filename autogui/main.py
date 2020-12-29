@@ -380,10 +380,5 @@ class Table(object):
 	def show(self):
 		self.qtable.show()
 
-
-
-
-		
-		
 		
 
