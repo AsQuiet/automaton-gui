@@ -1,7 +1,7 @@
 import os, shutil
 
 # GUI FUNCTIONS
-from autogui.main import App, Button, Label, Font, Image, Table
+from autogui.main import App, Button, Label, Font, Image, Table, BigInputfield
 from autogui.main import Dropdown, Popup, Inputfield, Slider, Checkbox
 
 # UTIL FUNCTIONS

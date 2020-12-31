@@ -109,10 +109,21 @@ def setup(app):
 		if slider1.getValue() > 980:
 			table1.show()
 
+	
+	inputfield_ = BigInputfield(app)
+	inputfield_.setGeom(200, 200, 200, 200)
+
 	app.loop(loop, 500)
 
+	button5 = Button(app, "pressm e bitch")
+	button5.setGeom(400, 400)
 
-	scl = 0.6
+	def sd():
+		print(inputfield_.getValue())
+
+	button5.setFunction(sd)
+
+	scl = 0.8
 	app.window_size_min = (1600*scl, 900*scl)
 	app.setWindowMin()
 	app.window_icon_path = 'icon.png'

@@ -276,6 +276,24 @@ class Inputfield(object):
 	def setText(self, text):
 		self.qinputfield.setText(text)
 
+class BigInputfield(object):
+
+	def __init__(self, app):
+		self.app = app
+
+		self.qinputfield = QPlainTextEdit(self.app.window)
+		self.setGeom()
+
+	def setGeom(self, x=0, y=0, w=100, h=20):
+		self.qinputfield.move(x, y)
+		self.qinputfield.resize(w, h)
+
+	def getValue(self):
+		return self.qinputfield.toPlainText()
+
+	def setText(self, text):
+		self.qinputfield.setText(text)
+
 class Slider(object):
 
 	Horizontal = 0
